@@ -43,7 +43,8 @@ class Solution {
     The time complexity of this approach is O(n) on average, as each number 
     is processed at most twice (once when checking forward and once when checking backward). 
     The space complexity is O(n) due to the HashMap storing the explored numbers.
-    nested loops are avoided by marking numbers as explored, ensuring that each number is only processed once, It is known as amortized O(n) time complexity.
+    nested loops are avoided by marking numbers as explored, ensuring that each number is 
+    only processed once, It is known as amortized O(n) time complexity.
     */
     public int longestConsecutive1(int[] nums) {
        int longlength =0;
