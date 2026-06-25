@@ -13,27 +13,16 @@ public class DFS {
         }
     }
 
-    public static void dfsIterative(int start,
-                                    List<Integer>[] adj,
-            boolean[] visited) {
-
+    public static void dfsIterative(int start, List<Integer>[] adj, boolean[] visited) {
         Stack<Integer> stack = new Stack<>();
-
         stack.push(start);
-
         while (!stack.isEmpty()) {
-
             int node = stack.pop();
-
             if (!visited[node]) {
-
                 visited[node] = true;
-
                 System.out.print(node + " ");
-
                 // Push all neighbours
                 for (int neighbour : adj[node]) {
-
                     if (!visited[neighbour]) {
                         stack.push(neighbour);
                     }
@@ -41,7 +30,6 @@ public class DFS {
             }
         }
     }
-
     public static void main(String[] args) {
         int v = 27;
         List<Integer>[] adj = new ArrayList[v];
